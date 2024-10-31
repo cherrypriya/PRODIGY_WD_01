@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea; /* Light grey background for contrast */
+    color: #333; /* Dark text color */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black; /* Initial black background */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    padding: 15px;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: #ff69b4; /* Change to pink when scrolled */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect when scrolled */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* White text color */
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+nav ul li a:hover {
+    color: #ff69b4; /* Change text color to pink on hover */
+}
+
+.content {
+    padding-top: 80px; /* Prevent content from being hidden behind the fixed nav */
+}
+
+section {
+    height: 100vh; /* Full height for demo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#home {
+    background-color: #ffffff; /* White background for home */
+}
+
+#about {
+    background-color: #f4f4f4; /* Light grey for about section */
+}
+
+#services {
+    background-color: #ffffff; /* White background for services */
+}
+
+#contact {
+    background-color: #f4f4f4; /* Light grey for contact section */
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+p {
+    max-width: 600px; /* Max width for paragraphs */
+    line-height: 1.6; /* Improved line spacing */
+}
